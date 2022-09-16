@@ -20,11 +20,13 @@ verificarVelocidade(85);
 
 function verificarVelocidade(velocidade)
 {
-    if (velocidade <= 70)
+    const velocidadeMaxima = 70;
+    const kmPorPontto = 5
+    if (velocidade <= velocidadeMaxima)
         console.log('Ok');
     else
     {
-        const pontos = Math.floor(((velocidade- 70) / 5));
+        const pontos = Math.floor(((velocidade - velocidadeMaxima) / kmPorPontto));
         if ( pontos >= 12)
             console.log('Carteira Suspensa');
         else
