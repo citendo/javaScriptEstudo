@@ -10,7 +10,7 @@ const celular =
 
     ligar : function()
     {
-        console.log('Ligando...')
+        console.log('Ligando...');
     }
 }
 
@@ -19,12 +19,12 @@ function criarCelular(marcaCelular,tamanhoTela,capacidadeBateria)
 {
     return {
         marcaCelular : marcaCelular,
-        tamanhoTela, // quando o parametro tem o mesmo nome da declaração , pode deixar só 1 nome
+        tamanhoTela, // quando o parametro tem o mesmo nome da declaração , pode deixar só 1 nome, MAS SÓ QUANDO É CRIADO POR FACTORY, COMO CONSTRUTOR TEM QUE PASSAR O PARAMETRO
         capacidadeBateria,
 
         ligar()
         {
-            console.log('Ligando...')
+            console.log('Ligando...');
         }
     }
 }
@@ -39,7 +39,7 @@ function criarTeclado(marcaTeclado,numeroTeclas,led,mecanico)
 
         digitar()
         {
-            console.log('Digitando....')
+            console.log('Digitando....');
         }
     }
 }
@@ -50,6 +50,6 @@ console.log(teclado1);
 
 teclado1.digitar();
 
-const celular1 = criarCelular('Asus',{vertical: 155, horizontal: 75},5000)
+const celular1 = criarCelular('Asus',{vertical: 155, horizontal: 75},5000);
 
 console.log(celular1);
