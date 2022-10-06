@@ -18,9 +18,9 @@
 //Boas praticas é usar o const e usar o let só quando precisar ficar alterando valor
 // console.log(valorIgressoAdulto);
 
-//Existem 2 tipos primitivos 
-//Referencia e valores
-// valores = String, Number, Boolean, Undefined, Know
+//Existem 2 tipos variaveis 
+//Referencia e primitivo
+// primitivo = String, Number, Boolean, Undefined, Know
 // referencia = object , arrays, functions 
 let nome = 'Rafael  asq12 !@!#'; // String literal
 let idade = 23; //number literal 
